@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 import useChatScroll from './helpers/chatHight';
 
-const socket = io('http://localhost:4000');
+const socket = io('https://chat-server-production-e744.up.railway.app/');
 
 function App() {
   const [message, setMessage] = useState('');
